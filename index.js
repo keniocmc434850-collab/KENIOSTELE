@@ -2,7 +2,7 @@ const { Telegraf, Markup } = require("telegraf");
 const fs = require("fs");
 const path = require("path");
 
-const BOT_TOKEN = "8620336521:AAG_u9AYArtryE9fGjJ1R8gny8NtoO4tUgo";
+const BOT_TOKEN = process.env.BOT_TOKEN;
 const bot = new Telegraf(BOT_TOKEN);
 
 // Load modules
